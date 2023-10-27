@@ -1,0 +1,36 @@
+<div class="container">
+  <h2 class="text-center">Items List</h2>
+
+  <div class="input-group mb-3">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search by Item Name"
+      [(ngModel)]="searchTerm"
+    />
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" (click)="filterItems()">
+        Search
+      </button>
+    </div>
+  </div>
+  
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Item Name</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of filteredItems">
+        <td>{{ item.itemName }}</td>
+        <td>{{ item.price }}/-</td>
+        <td>
+          <button (click)="selectItem(item)" class="btn btn-primary">Select</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

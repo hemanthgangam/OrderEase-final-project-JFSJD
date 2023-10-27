@@ -1,0 +1,12 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.btn{
+    border-radius: 30px;
+}
+
+thead{
+    font-size: 20px;
+}
+.text-right{
+    font-size: 20px;
+}

@@ -1,0 +1,11 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.bg-custom {
+    background-color: rgb(123, 123, 185); 
+  }
+ .navbar-brand{
+  font-size: 20px;
+ }
+  .nav-item{
+    font-size: 20px;
+  }
